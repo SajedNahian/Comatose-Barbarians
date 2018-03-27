@@ -10,5 +10,13 @@ if the value is true, what is the solution?
 when im asked to solve for a possible path through a maze with n junctions, the recursive abstraction can find possible paths through a maze with n-1 junctions
 ## base case
 ## English or pseudocode description of algorithm
+First break the maze into nodes or places where you must turn or are given multiple options. One of these nodes is the starting node and the other is an end node. 
+
+Begin at the start node. Continue down the node until you reach another node meaning you must either turn or are given options on where to go. 
+-In the case of the turn only option, move down that node. And continue the process described above.
+-In the case of the multiple options, for each option, continue the process described above.
+
+Once you reach the end node, note the series of nodes you have taken to arrive to the end.
+This series will then be converted back into a solution.
 ## class(es), with fields and methods
 ## version*n* wish list
