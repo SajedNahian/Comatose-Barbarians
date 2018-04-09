@@ -2,6 +2,7 @@
 Maze Solver by Comatose Barbarians 
 
 ## personnel
+Sajed Nahian and Andrew Wargo
 ## statement of problem
 what is the Boolean value of the statement “it is possible to get from the starting
 position to treasure”
@@ -9,6 +10,7 @@ if the value is true, what is the solution?
 ## recursive abstraction
 when im asked to solve for a possible path through a maze with n junctions, the recursive abstraction can find possible paths through a maze with n-1 junctions
 ## base case
+The explorer is on the same file and rank as the treasure
 ## English or pseudocode description of algorithm
 First break the maze into nodes or places where you must turn or are given multiple options (to turn or continue). One of these nodes should be the starting node and the other should be the ending node. 
 
