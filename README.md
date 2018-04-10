@@ -14,9 +14,13 @@ If the explorer is on the treasure, return true.
 If the explorer is on a wall, return false.
 ## English or pseudocode description of algorithm
 Drop a wall onto the current position of the explorer.
+
 If the explorer isn't on the west edge of the maze, and if the recursive abstraction with the explorer one step to the west returns true, return true.
+
 Then if the explorer isn't on the north edge of the maze, and if the recursive abstraction with the explorer one step to the north returns true, return true.
+
 Then if the explorer isn't on the east edge of the maze, and if the recursive abstraction with the explorer one step to the east returns true, return true.
+
 Then if the explorer isn't on the south edge of the maze, and if the recursive abstraction with the explorer one step to the south returns true, return true.
 
 Return false.
