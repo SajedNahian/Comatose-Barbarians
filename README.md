@@ -11,6 +11,7 @@ if the value is true, what is the solution?
 when im asked to solve for a possible path through a maze with n "stepping stones", the recursive abstraction can find possible paths through a maze with n-1 ""stepping stones"
 ## base case
 If the explorer is on the treasure, return true.
+
 If the explorer is on a wall, return false.
 ## English or pseudocode description of algorithm
 Drop a wall onto the current position of the explorer.
