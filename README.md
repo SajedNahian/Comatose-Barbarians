@@ -8,18 +8,17 @@ what is the Boolean value of the statement “it is possible to get from the sta
 position to treasure”
 if the value is true, what is the solution?
 ## recursive abstraction
-when im asked to solve for a possible path through a maze with n junctions, the recursive abstraction can find possible paths through a maze with n-1 junctions
+when im asked to solve for a possible path through a maze with n "stepping stones", the recursive abstraction can find possible paths through a maze with n-1 ""stepping stones"
 ## base case
-The explorer is on the same file and rank as the treasure
+If the explorer is on the treasure, return true.
+If the explorer is on a wall, return false.
 ## English or pseudocode description of algorithm
-First break the maze into nodes or places where you must turn or are given multiple options (to turn or continue). One of these nodes should be the starting node and the other should be the ending node. 
+Drop a wall onto the current position of the explorer.
+If the explorer isn't on the west edge of the maze, and if the recursive abstraction with the explorer one step to the west returns true, return true.
+Then if the explorer isn't on the north edge of the maze, and if the recursive abstraction with the explorer one step to the north returns true, return true.
+Then if the explorer isn't on the east edge of the maze, and if the recursive abstraction with the explorer one step to the east returns true, return true.
+Then if the explorer isn't on the south edge of the maze, and if the recursive abstraction with the explorer one step to the south returns true, return true.
 
-Begin at the start node. Continue down the node until you reach another node meaning you must either be forced to turn or are given options on where to go. 
--In the case of the turn only option, move down that node. And continue the process described above.
--In the case of the multiple options, for each option, continue the process described above.
--In the case that you cannot continue down a node because it is a dead end, end the process being done for that series of nodes.
-
-Once you reach the end node, note the series of nodes you have taken to arrive to the end.
-This series will then be converted back into a solution.
+Return false.
 ## class(es), with fields and methods
 ## version*n* wish list
