@@ -6,7 +6,6 @@ Sajed Nahian and Andrew Wargo
 ## statement of problem
 what is the Boolean value of the statement “it is possible to get from the starting
 position to treasure”
-if the value is true, what is the solution?
 ## recursive abstraction
 when im asked to solve for a possible path through a maze with n "stepping stones", the recursive abstraction can find possible paths through a maze with n-1 ""stepping stones"
 ## base case
