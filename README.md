@@ -7,7 +7,14 @@ Sajed Nahian and Andrew Wargo
 what is the Boolean value of the statement “it is possible to get from the starting
 position to treasure”
 ## recursive abstraction
-when im asked to solve for a possible path through a maze with n "stepping stones", the recursive abstraction can find possible paths through a maze with n-1 ""stepping stones"
+when im asked 
+
+  the Boolean value of the statement “it is possible to get from the starting
+position to treasure”
+  
+the recursive abstraction 
+  
+  can move the starting position by one stepping stone and then return the Boolean value of the statement “it is possible to get from the starting position to treasure”
 ## base case
 If the explorer is on the treasure, return true.
 
