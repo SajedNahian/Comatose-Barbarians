@@ -32,4 +32,56 @@ Then if the explorer isn't on the south edge of the maze, and if the recursive a
 
 Return false.
 ## class(es), with fields and methods
-## version*n* wish list
+Class Maze -
+
+int TREASURE, WALL, STEPPINGSTONE, EAST, WEST, NORTH, SOUTH
+
+int[][] maze
+    
+final int MAX_RANKS = 64
+
+int rankCount  
+    
+Vector explorerPosition  
+
+Maze( String sourceFilename, int explorerRank, int explorerFile)
+
+Maze( Maze old)
+
+toString()
+
+go(int direction)
+
+dropA(int mazeElement)
+
+explorerIsOnA()
+
+
+
+Class MazeSolver -
+
+MazeSolver()
+
+isMazeSolvable(Maze current)
+
+
+
+
+Class UserOfMazeSolver -
+
+main(String[] commandLine)
+
+solveTest(Maze x)
+
+
+
+Class UserOfMaze - 
+
+
+
+## version1 wish list
+Fix vertical movement bug
+Return a single maze that shows the path taken by the explorer
+
+## known bugs
+When the explorer attempts to leave the maze through the north or south, there is a null pointer exception.
