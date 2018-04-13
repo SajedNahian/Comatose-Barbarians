@@ -75,8 +75,7 @@ solveTest(Maze x)
 
 
 ## version1 wish list
-Fix vertical movement bug
 Return a single maze that shows the path taken by the explorer
 
 ## known bugs
-When the explorer attempts to leave the maze through the north or south, there is a null pointer exception.
+Cannot work if maze is empty
