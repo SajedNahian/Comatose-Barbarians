@@ -60,7 +60,7 @@ explorerIsOnA()
 
 Class MazeSolver -
 
-MazeSolver()
+int[] directions
 
 isMazeSolvable(Maze current)
 
