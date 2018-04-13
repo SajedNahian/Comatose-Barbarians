@@ -74,11 +74,6 @@ main(String[] commandLine)
 solveTest(Maze x)
 
 
-
-Class UserOfMaze - 
-
-
-
 ## version1 wish list
 Fix vertical movement bug
 Return a single maze that shows the path taken by the explorer
