@@ -62,7 +62,7 @@ Class MazeSolver -
 
 int[] directions
 
-isMazeSolvable(Maze current)
+isMazeSolvable(Maze maze)
 
 
 
