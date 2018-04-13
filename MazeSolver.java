@@ -1,29 +1,26 @@
 //Solve a given maze
 public class MazeSolver{
 	
-	private int[] directions = {Maze.EAST, Maze.NORTH, Maze.WEST, Maze.SOUTH};
-	
-	public MazeSolver() {
+	private static int[] directions = {Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
+
+
+	public static boolean isMazeSolvable(Maze maze) {
+		System.out.println(maze);
+		if (maze.explorerIsOnA() == Maze.TREASURE) 
+			return true;
+		
+		if (maze.explorerIsOnA() == Maze.WALL) 
+			return false;
+		
+		for (int i = 0; i < directions.length; i++) {
+			Maze mazeCopy = new Maze(maze);
+			mazeCopy.dropA(Maze.WALL);
+			mazeCopy.go(directions[i]);
+			if (isMazeSolvable(mazeCopy)) 
+				return true;
+		}
+
+		return false;	
 	}
 
-	public boolean isMazeSolvable(Maze current) {
-	    
-		if(current.explorerIsOnA() == Maze.TREASURE)
-			return true;
-		if(current.explorerIsOnA() == Maze.WALL)
-			return false;
-       
-		current.dropA(Maze.WALL);
-		
-		for(int direction : directions) {
-		    Maze snapshot = new Maze(current);
-		    System.out.println(snapshot);
-		    snapshot.go(direction);
-		    if(isMazeSolvable(snapshot))
-		        return true;
-		}
-		
-		return false;
-		}
-		
-	}
+}

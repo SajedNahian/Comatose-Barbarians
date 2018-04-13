@@ -7,6 +7,7 @@
 
   For example,
       java UserOfMazeSolver mazes/intersection_treasureNorth.txt 1 1
+      java UserOfMazeSolver mazes/test.txt 3 0
  */
 
 public class UserOfMazeSolver {
