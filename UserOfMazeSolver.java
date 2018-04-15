@@ -17,6 +17,7 @@ public class UserOfMazeSolver {
        throws java.io.FileNotFoundException {
         System.out.println();
 
+        // Taking imput from command line to get the maze as well as the two coordinates of the explorer's starting position
         Maze maze = new Maze( commandLine[0]
                             , Integer.parseInt( commandLine[1])
                             , Integer.parseInt( commandLine[2])
@@ -27,7 +28,6 @@ public class UserOfMazeSolver {
     }
 
     private static void solveTest(Maze mazeToTest) {
-    	//MazeSolver i = new MazeSolver();
     	System.out.println(MazeSolver.isMazeSolvable(mazeToTest));
     }
 }
