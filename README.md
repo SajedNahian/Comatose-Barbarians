@@ -75,7 +75,7 @@ solveTest(Maze x)
 
 
 ## version1 wish list
-Return a single maze that shows the path taken by the explorer
+Return a single maze that shows the path taken by the explorer\
 <strike>Commented Code</strike>
 
 ## known bugs
