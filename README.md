@@ -74,9 +74,8 @@ main(String[] commandLine)
 solveTest(Maze x)
 
 
-## version1 wish list
-Return a single maze that shows the path taken by the explorer\
-<strike>Commented Code</strike>
+## version2 wish list
+Return a representation of the maze where the order of steps by the explorer is shown 
 
 ## known bugs
 Cannot work if maze is empty
